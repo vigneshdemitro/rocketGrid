@@ -1,0 +1,30 @@
+[
+    {
+        "name" : "id",
+        "sortable" : true
+    },
+    {
+        "name" : "first_name",
+        "sortable" : true
+    },
+    {
+        "name" : "last_name",
+        "sortable" : true
+    },
+    {
+        "name" : "email",
+        "sortable" : false
+    },
+    {
+        "name" : "gender",
+        "sortable" : false
+    },
+    {
+        "name" : "city",
+        "sortable" : false
+    },
+    {
+        "name" : "state",
+        "sortable" : true
+    }
+]
