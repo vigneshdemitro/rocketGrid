@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'rocketLaneApp';
+  filterBtn = false;
+
+  filterDiv(){
+    this.filterBtn = true
+  }
 }

@@ -1,0 +1,15 @@
+.viewport{
+    position: fixed;
+    width: 100%;
+    max-height: 90%;
+    margin-left: 68px;
+    margin-right: 8px;
+    overflow-y: scroll;
+}
+.spacer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+    margin-right: 14px;
+}
+
