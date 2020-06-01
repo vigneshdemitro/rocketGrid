@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, Input, SimpleChanges } from '@angular/core';
 import { GetJsonDataService } from '../get-json-data.service';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatSort } from '@angular/material/sort';
@@ -11,10 +11,12 @@ import { MatSort } from '@angular/material/sort';
 
 export class GenerateTableComponent implements OnInit {
 
-  tableHeader = []
-  displayCol = []
+  @Input() public filterData;
 
-  dataSource
+  tableHeader = [];
+  displayCol = [];
+  filterValue;
+  dataSource;
 
   constructor(private jsonService: GetJsonDataService) { }
 

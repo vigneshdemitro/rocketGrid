@@ -5,8 +5,7 @@
     <div class="viewport">
       <div class="container-fluid">
         <div
-          class="row d-flex align-items-center justify-content-between spacer"
-        >
+          class="row d-flex align-items-center justify-content-between spacer">
           <span><h2>List View</h2></span>
           <span><button mat-raised-button color="primary" (click)="filterDiv()">
               Filter
@@ -19,8 +18,8 @@
             </div>
           </div>
           <div class="row spacer" *ngIf="filterBtn">
-            <app-generate-table class="tb-left mt-3"></app-generate-table>
-            <div class="tb-right mt-3" *ngIf="filterBtn"></div>
+            <app-generate-table class="tb-left mt-3" [filterData]="filterObj"></app-generate-table>
+            <app-filter class="tb-right mt-3" (filterChange)="toFilter($event)"></app-filter>
           </div>
         </div>
       </div>

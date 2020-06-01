@@ -8,8 +8,18 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'rocketLaneApp';
   filterBtn = false;
+  filterObj;
+
 
   filterDiv(){
-    this.filterBtn = true
+    if (this.filterBtn === false){
+      this.filterBtn = true
+    }else {
+      this.filterBtn = false
+    }
+
+  }
+  toFilter($event){
+    this.filterObj = $event;
   }
 }

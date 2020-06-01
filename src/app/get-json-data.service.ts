@@ -6,9 +6,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class GetJsonDataService {
 
-  private _jsonLoc = '../assets/json/MOCK_DATA.json';
-  private _colLoc = '../assets/json/column.json'
- 
+  private _jsonLoc = 'assets/json/MOCK_DATA.json';
+  private _colLoc = 'assets/json/column.json'
+
   constructor(private http: HttpClient) { }
 
   getJson(){

@@ -10,6 +10,7 @@ import { ViewportComponent } from './viewport/viewport.component';
 import { GenerateTableComponent } from './generate-table/generate-table.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
+import { FilterComponent } from './filter/filter.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { MaterialModule } from './material/material.module';
     TopBarComponent,
     SideNavComponent,
     ViewportComponent,
-    GenerateTableComponent
+    GenerateTableComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,
